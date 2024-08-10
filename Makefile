@@ -1,4 +1,4 @@
-.PHONY:
+.PHONY: build
 
 build:
 	go build -o ./binary/
