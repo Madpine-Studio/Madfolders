@@ -7,7 +7,7 @@ Madfolders is a CLI tool, for internal usage, intended to create the default pro
 - Make tool
 
 ## How to build
-The binary must appear on the binary folder if it builds correctly by using the command below
+The binary must appear on the bin folder if it builds correctly by using the command below
 
 ```bash
   make build
@@ -20,7 +20,7 @@ The binary must appear on the binary folder if it builds correctly by using the 
 #### Automagically
 Try running this first if it doesn't work try the manual way
 ```bash
-  Add-Content -Path $Profile -Value "`$Env:PATH += `"$($PWD.Path)\binary;`""
+  Add-Content -Path $Profile -Value "`$Env:PATH += `"$($PWD.Path)\bin;`""
 ```
 #### Manually
 On windows is a bit tricky somethimes buggy, but you have to acess your powershell `$Profile` by typing the
@@ -34,7 +34,7 @@ Your profile will be displayed on a notepad and all you have to do is add the st
 Please do not forget the semicolon!!!
 
 ```bash
-  $Env:PATH=$Env:PATH + "C:\path\to\your\binary;"
+  $Env:PATH=$Env:PATH + "C:\path\to\your\bin;"
 ```
 
 
